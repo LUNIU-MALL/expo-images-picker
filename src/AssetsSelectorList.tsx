@@ -148,7 +148,7 @@ const Block = styled.TouchableOpacity<{
     screen: number
     cols: number
 }>`
-    width: ${({ screen, cols }) => screen / cols}px;
-    height: ${({ screen, cols }) => screen / cols}px;
+    width: ${({ screen, cols }) => (screen / cols) - 5}px;
+    height: ${({ screen, cols }) => (screen / cols) - 5}px;
     padding: ${({ margin }) => margin}px;
 `
